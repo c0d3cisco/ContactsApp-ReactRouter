@@ -71,7 +71,7 @@ export default function Contact() {
   );
 }
 
-
+/* eslint-disable-next-line padded-blocks */
 function Favorite({ contact }) {
   // yes, this is a `let` for later
 	let favorite = contact.favorite;
@@ -92,5 +92,10 @@ function Favorite({ contact }) {
     </Form>
   );
 }
+
+Favorite.propTypes = {
+  name: PropTypes.string.isRequired
+}
+
 
 
